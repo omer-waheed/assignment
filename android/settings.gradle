@@ -1,0 +1,3 @@
+rootProject.name = 'blue_east'
+
+include ':app'
