@@ -3,6 +3,7 @@ import { Router, Scene } from "react-native-router-flux";
 
 import Home from "./screens/Home";
 import Bill from "./screens/Bill";
+import ViewBill from "./screens/ViewBill";
 
 class RouterComponent extends Component {
   state = {};
@@ -12,6 +13,7 @@ class RouterComponent extends Component {
         <Scene key="root">
           <Scene
             key="home"
+            initial
             component={Home}
             title={"BILL MANAGER"}
             titleStyle={{ color: "white" }}
@@ -19,8 +21,13 @@ class RouterComponent extends Component {
           <Scene
             key="bill"
             component={Bill}
-            initial
             title={"CREATE BILL"}
+            titleStyle={{ color: "white" }}
+          />
+          <Scene
+            key="viewBill"
+            component={ViewBill}
+            title={"BILL MANAGER"}
             titleStyle={{ color: "white" }}
           />
         </Scene>
